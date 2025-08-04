@@ -21,11 +21,11 @@ from pytorch_lightning.loggers import TensorBoardLogger
 from pytorch_lightning.utilities import seed as pl_seed
 
 from ranger21 import Ranger21
-from dictlogger import DictLogger
 
-from weightdrop import WeightDrop
-from nl import Mish
-from data import RapppidDataModule, RapppidDataModule2
+from rapppid.dictlogger import DictLogger
+from rapppid.weightdrop import WeightDrop
+from rapppid.nl import Mish
+from rapppid.data import RapppidDataModule, RapppidDataModule2
 
 from passlib import pwd
 

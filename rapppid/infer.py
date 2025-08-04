@@ -1,11 +1,11 @@
-from train import LSTMAWD
+from rapppid.train import LSTMAWD
 from pathlib import Path
 from typing import Optional
 
 import sentencepiece as sp
 import numpy as np
 import torch
-from pytorch_lightning.utilities import seed as pl_seed
+from lightning_lite.utilities import seed as pl_seed
 
 def load_chkpt(chkpt_path: Path):
     return LSTMAWD.load_from_checkpoint(chkpt_path)
